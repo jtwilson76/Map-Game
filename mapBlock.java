@@ -1,5 +1,5 @@
 
-public class mapBlock
+public class MapBlock
 {
 
 	public String title = "";
@@ -11,7 +11,7 @@ public class mapBlock
 	public int[] itemsHere = new int[25];
 	public int itemCount = 0;
 	
-	public mapBlock(String t, String d, int north, int south, int east, int west)
+	public MapBlock(String t, String d, int north, int south, int east, int west)
 	{
 
 		title = t;

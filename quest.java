@@ -19,7 +19,7 @@ public class Quest
 	public static int itemCount = 0;
 	public static int playerCount = 0;
 	
-	public static mapBlock[][] map = new mapBlock[maxX][maxY];
+	public static MapBlock[][] map = new MapBlock[maxX][maxY];
 	public static Player p = new Player();  //the main player
 	public static Item[] items = new Item[maxItems];
 	public static Player[] npcs = new Player[maxPlayers];
@@ -276,7 +276,7 @@ public class Quest
 		}
 	}
 	
-	public static boolean wall(mapBlock m, char direction)
+	public static boolean wall(MapBlock m, char direction)
 	{
 		switch(direction)
 		{
@@ -688,7 +688,7 @@ public class Quest
 				
 				//System.out.println("Adding map block " + xpos + "," + ypos + " - " +t );
 				
-				map[xpos][ypos] = new mapBlock(t,d,n,s,e,w);
+				map[xpos][ypos] = new MapBlock(t,d,n,s,e,w);
 				
 				
 				line = br.readLine();
